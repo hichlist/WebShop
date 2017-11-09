@@ -1,0 +1,44 @@
+{% extends "mainapp/base.html" %}
+    {% load staticfiles %}
+        {% block content %}
+              
+               <div class="new_products"><h3 class="product_title">New products</h3>
+                
+                {% for item in product %}  
+                   <div class="product">
+                       <div class="product_pic">
+                           <img src={% static "img/products/board7.jpg" alt="board" %}>
+                       </div>
+                       <div class="product_name">{{ item.name }}</div>
+                      <div class="product_price">$ {{ item.price}}</div>
+                      <div class="product_price_old">$ {{ item.sale_price }}</div>
+                   </div>
+                {% endfor %}      
+              
+                </div>
+              
+               <div class="new_products"><h3 class="product_title">Top products</h3>
+                {% for item in product_top %}  
+                   <div class="product">
+                       <div class="product_pic">
+                           <img src={% static "img/products/board1.jpg" alt="board" %}>
+                       </div>
+                       <div class="product_name">{{ item.name }}</div>
+                      <div class="product_price">$ {{ item.price}}</div>
+                      <div class="product_price_old">$ {{ item.sale_price }}</div>
+                   </div>
+                {% endfor %}
+               </div>
+               <div class="new_products"><h3 class="product_title">Sale products</h3>
+                {% for item in product_sale %}  
+                   <div class="product">
+                       <div class="product_pic">
+                           <img src={% static "img/products/board12.jpg" alt="board" %}>
+                       </div>
+                       <div class="product_name">{{ item.name }}</div>
+                      <div class="product_price">$ {{ item.price}}</div>
+                      <div class="product_price_old">$ {{ item.sale_price }}</div>
+                   </div>
+                {% endfor %}
+               </div>
+        {% endblock %}

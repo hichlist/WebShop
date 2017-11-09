@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {% load staticfiles %}
+   
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/css/style.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+       <div class="header_items">
+        <div class="header_items_left">
+         <img id="logo" src={% static "img/logo.png" %}>  
+         <div class="welcome">
+             <h1 class="welcome_text">Welcome to surfhouse</h1>
+             <h4 class="welcome_description">The only online store you willever need for allyour windsurfing and kitesurfing and SUP needs</h4>
+         </div>
+        </div>
+        <div class="header_items_right">
+            <div class="media_icons">
+                <img class="icons" src={% static "img/facebook_icon.png" %}>
+                <img class="icons" src={% static "img/twitter_icon2.png" %}>
+                <img class="icons" src={% static "img/youtube_icon3.png" %}>
+                <img class="icons" src={% static "img/pinterest_icon4.png" %}>
+                <img class="icons" src={% static "img/insta_icon5.png" %}>
+            </div>
+            <div class="welcome_large_text">
+                jp funride <br>2017
+            </div>
+            <div class="welcome_small_text">
+                Super easy going freeride boards based on the X-cite ride shape consept with additional control and super easy jibing
+            </div>
+            <div class="buy_now_button">
+                buy now
+            </div>
+        </div>
+       </div>
+    </div>
+    <div class="container">
+        <div class="content">
+           <div class="left_column">
+                <ul class="menu">
+                    <li>Main</li>
+                    <li>About</li>
+                    <li>Apparel</li>
+                    <li>Surf Apparel</li>
+                    <li>WindSurf</li>
+                    <li>KiteSurf</li>
+                    <li>Accessories</li>
+                    <li>Sale</li>
+                    <li>Brands</li>
+                    <li>Blog</li>
+                    <li>Gadgets</li>
+                    <li>Contact</li>
+                </ul>
+                <div class="banner">
+                    <h1 class="now">Now is open!</h1>
+                </div>
+            </div>
+           <div class="items">
+               {% block content %}
+               
+               {% endblock %}
+           </div>
+        </div>
+    </div>
+    <div class="footer_block_1"></div>
+    <div class="footer_block_2">
+       <img id="insta_text" src={% static "img/Instagram_feed.png" %} alt="instalgram">
+        <img src={% static "img/Live1.jpg" alt="surfing" %}>
+        <img src={% static "img/Live2.jpg" alt="surfing" %}>
+        <img src={% static "img/Live3.jpg" alt="surfing" %}>
+        <img src={% static "img/Live4.jpg" alt="surfing" %}>
+        <img src={% static "img/Live5.jpg" alt="surfing" %}>
+        <img src={% static "img/Live6.jpg" alt="surfing" %}>
+    </div>
+    <div class="footer_block_3">
+        <div class="footer_block_social_1"><img src={% static "img/f_icon.png" alt="facebook" %}></div>
+        <div class="footer_block_social_2"><img src={% static "img/t_icon.png" alt="twitter" %}></div>
+        <div class="footer_block_social_3"><img src={% static "img/p_icon.png" alt="pin" %}></div>
+    </div>
+    <div class="footer">
+    <span>&copy; 2017 All rights reserved - Designed by Hich</span>
+    </div>
+    
+    
+</body>
+</html>

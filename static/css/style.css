@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    background-color: #F8F8FF;
+    height: 100%;
+}
+
+.container{
+    overflow: auto;
+    margin: -20px auto 0;
+}
+.header{
+    background-color:  #abeafa;
+    width: 100%;
+    height: 700px;
+    background-image: url(../img/surfing.jpg);
+}
+.header_items{
+    width: 1170px;
+    height: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.header_items_left{
+    display: inline-block;
+    width: 270px;
+}
+
+#logo{
+    margin: 30px 0 0 69px;
+}
+.welcome{
+    display: block;
+    margin: 201px 0 0 0;
+    background-color:  #fff51f;
+    width: 270px;
+    height: 300px;
+    overflow: hidden;
+}
+.welcome_text{
+    display: block;
+    font-family: sans-serif;
+    color:  #333333;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin: 82px 0 0 25px; 
+}
+.welcome_description{
+    display: block;
+    font-family: sans-serif;
+    font-style: italic;
+    color:  #333333;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 15px;
+    margin: 20px 0 0 25px; 
+}
+.header_items_right{
+    display: inline-block;
+    width: 870px;
+    height: 645px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.media_icons{
+    margin: 50px 0 0 685px;
+    width: 150px;
+    height: 16px;
+}
+.icons{
+    margin-left: 5px;
+}
+.welcome_large_text{
+    font-family: sans-serif;
+    color:  #fff51f;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 42px;
+    margin: 177px 0 0 445px;
+    text-transform: uppercase;
+    width: 313px;
+    height: auto;
+    text-align: left;
+    text-shadow: 0px 0px 10px #333;
+}
+.welcome_small_text{
+    font-family: sans-serif;
+    color:  #fff51f;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 3px 0 0 445px;
+    width: 311px;
+    height: auto;
+    text-align: left;
+    text-shadow: 0px 0px 10px #333;
+}
+.buy_now_button{
+    background-color:  #fff51f;
+    width: 103px;
+    height: 29px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: sans-serif;
+    padding: 14px 0 0 25px;
+    margin: 62px 0 0 445px;
+    box-shadow: 0px 0px 10px #333;
+}
+.buy_now_button:hover{
+    background-color:  #FFF585;
+}
+.content{
+    width: 1170px;
+    min-height: 300px;
+    margin: 0 auto;
+}
+.left_column{
+    width: 270px;
+    overflow: hidden;
+    float: left;
+}
+.menu{
+    background-color:  #26d2fc;
+    width: 270px;
+    height: 451px;
+    overflow: hidden;
+}
+.menu li{
+    font-size: 11pt;
+    font-family: sans-serif;
+    font-weight: bolder;
+    line-height: 1.0;
+    list-style-type: none;
+    text-transform: uppercase;
+    padding: 11px 0 0 50px;
+    height: 25px;
+}
+.menu li:first-child{
+    height: 35px;
+    padding: 20px 0 0 50px;
+}
+.menu li:hover{
+    background-color: #333;
+    color: #fff;
+}
+.banner{
+    background-color:  #e0e0e0;
+    width: 270px;
+    height: 300px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.now{
+    font-family: sans-serif;
+    color:  #333;
+    font-size: 37px;
+    font-weight: 900;
+    line-height: 42px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 120px 0 0 120px;
+    width: 150px;
+    height: auto;
+    text-align: left;
+}
+.items{
+    background-color:  #f8f8f8;
+    width: 870px;
+    height: auto;
+    float: right;
+}
+.new_products{
+    background-color:  #f8f8f8;
+    width: 870px;
+    height: auto;
+}
+.product_title{
+    font-family: sans-serif;
+    color:  #707070;
+    font-size: 22px;
+    font-weight: 800;
+    font-style: italic;
+    text-transform: uppercase;
+    padding: 24px;
+}
+.product{
+    display: inline-block;
+    background-color:  #EAEAEA;
+    width: 270px;
+    height: 320px;
+    margin: 0 25px 30px 0;
+    position: relative;
+}
+.product:nth-child(3n+4){
+    margin: 0 0 30px 0;
+}
+.product:hover{
+    box-shadow: 0px 0px 10px #333;
+}
+.corner_new{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.corner_text{
+    position: absolute;
+    top: 5px;
+    right: 4px;
+    font-family: sans-serif;
+    font-size: 7pt;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.product_pic{
+    background-color:  #eaeaea;
+    width: 250px;
+    height: 235px;
+    margin: 10px 0 0 10px;
+    overflow: hidden;
+}
+.product_name{
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 900;
+    width: 130px;
+    height: 55px;
+    float: left;
+    color: #333;
+    position: absolute;
+    top: 255px;
+    right: 123px;
+    overflow: hidden;
+}
+.product_price{
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: #333;
+    width: 105px;
+    position: absolute;
+    top: 255px;
+    right: 15px;
+    text-align: right;
+    overflow: hidden;
+}
+.product_price_old{
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    color: #f00;
+    width: 95px;
+/*    text-decoration-line: line-through;*/
+    position: absolute;
+    top: 285px;
+    right: 15px;
+    text-align: right;
+    overflow: hidden;
+}
+.footer_block_1{
+    background-color:  #ffffff;
+    width: 1170px;
+    height: 160px;
+    margin: 0 auto;
+    background-image: url(../img/brand.png);
+    opacity: 0.5;
+}
+.footer_block_2{
+    background-color:  #eaeaea;
+    width: 1170px;
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.footer_block_2 img{
+    margin: 105px 8px 0 0;
+    opacity: 0.8;
+}
+.footer_block_2 img:hover{
+    opacity: 1;
+}
+.footer_block_2 img:last-child{
+    margin: 105px -3px 0 0;
+}
+#insta_text{
+    position: absolute;
+    top: -60px;
+    left: 470px;
+}
+.footer_block_3{
+    background-color:  #ffffff;
+    width: 1170px;
+    height: 150px;
+    margin: 0 auto;
+}
+.footer_block_social_1{
+    background-color:  #3b5997;
+    width: 390px;
+    height: 150px;
+    float: left;
+    margin: 0px;
+    text-align: center;
+}
+.footer_block_social_2{
+    background-color:  #3fccfd;
+    width: 390px;
+    height: 150px;
+    float: left;
+    margin: 0px;
+    text-align: center;
+}
+.footer_block_social_3{
+    background-color:  #cb2027;
+    width: 390px;
+    height: 150px;
+    float: left;
+    margin: 0px;
+    text-align: center;  
+}
+.footer_block_3 img{
+    margin-top: 45px;
+}
+.footer{
+    background-color:  #373737;
+    width: 100%;
+    height: 100px;
+    float: none;
+    text-align: center;
+}
+.footer span{
+    display: inline-block;
+    margin-top: 65px;
+    font-family: sans-serif;
+    color: #fefefe;
+}
