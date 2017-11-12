@@ -5,7 +5,12 @@
    
     <meta charset="UTF-8">
     <link rel="stylesheet" href="static/css/style.css" type="text/css">
-    <title>Document</title>
+    
+    <title>
+    {% block title %}
+    SurfHouse
+    {% endblock %}
+    </title>
 </head>
 <body>
     <div class="header">
@@ -24,6 +29,13 @@
                 <img class="icons" src={% static "img/youtube_icon3.png" %}>
                 <img class="icons" src={% static "img/pinterest_icon4.png" %}>
                 <img class="icons" src={% static "img/insta_icon5.png" %}>
+            </div>
+            <div class="media_icons">
+                <form method="post" action="/user/login/">{% csrf_token %}
+                    <input type="text" placeholder="login" name="login" value="">
+                    <input type="password" placeholder="password" name="password" value="">
+                    <button type="submit">OK</button>
+                </form>
             </div>
             <div class="welcome_large_text">
                 jp funride <br>2017
