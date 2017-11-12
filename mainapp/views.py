@@ -12,10 +12,3 @@ def main(request):
     
     return render(request, 'mainapp/main.html', {'product': product, 'product_top': product_top, 'product_sale': product_sale})
 
-def login(request):
-    if request.method == 'POST'
-        username = request.POST.get('login')
-        password = request.POST.get('password')
-        user = auth.authenticate(username=username, password=password)
-        
-    

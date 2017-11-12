@@ -76,6 +76,14 @@ body{
     width: 150px;
     height: 16px;
 }
+.auth_form{
+    font-family: sans-serif;
+    color:  #2D64AD;
+    margin: 20px 0 0 685px;
+    width: 150px;
+    height: 16px;
+    
+}
 .icons{
     margin-left: 5px;
 }
@@ -255,6 +263,7 @@ body{
     font-family: sans-serif;
     font-weight: 900;
     font-size: 14px;
+    font-size: 20px;
     color: #f00;
     width: 95px;
 /*    text-decoration-line: line-through;*/

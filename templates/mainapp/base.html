@@ -4,7 +4,7 @@
    {% load staticfiles %}
    
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="static/css/style.css" type="text/css">
+    <link rel="stylesheet" href={% static "css/style.css" %} type="text/css">
     
     <title>
     {% block title %}
@@ -30,12 +30,21 @@
                 <img class="icons" src={% static "img/pinterest_icon4.png" %}>
                 <img class="icons" src={% static "img/insta_icon5.png" %}>
             </div>
-            <div class="media_icons">
-                <form method="post" action="/user/login/">{% csrf_token %}
-                    <input type="text" placeholder="login" name="login" value="">
-                    <input type="password" placeholder="password" name="password" value="">
-                    <button type="submit">OK</button>
-                </form>
+            <div class="auth_form">
+                {% if not user.is_authenticated %}      
+                    <form method="post" action="/user/login/">{% csrf_token %}
+                        <input type="text" placeholder="login" name="login" value="">
+                        <input type="password" placeholder="password" name="password" value="">
+                        <button type="submit">OK</button>
+                    </form>
+                    {% if errors %}
+                        <p class="error">Login or password is incorrect</p>
+                    {% endif %}           
+                {% else %}
+                    {{ user.username }}
+                    <a href="/user/logout/">logout</a>
+                
+                {% endif %}
             </div>
             <div class="welcome_large_text">
                 jp funride <br>2017

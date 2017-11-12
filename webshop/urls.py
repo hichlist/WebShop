@@ -16,10 +16,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 import mainapp.views as mainapp
+import authapp.views as authapp
 
 urlpatterns = [
     url(r'^admin/$', admin.site.urls),
     url(r'^$', mainapp.main, name='main'),
-    url(r'^user/login/$', login, name='login'),
+    url(r'^user/login/$', authapp.login, name='login'),
+    url(r'^user/logout/$', authapp.logout, name='logout'),
     
 ]
