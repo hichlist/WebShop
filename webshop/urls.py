@@ -23,5 +23,6 @@ urlpatterns = [
     url(r'^$', mainapp.main, name='main'),
     url(r'^user/login/$', authapp.login, name='login'),
     url(r'^user/logout/$', authapp.logout, name='logout'),
-    
+    url(r'^user/registration/$', authapp.registration, name='registration'),
+
 ]

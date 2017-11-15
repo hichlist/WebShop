@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
    {% load staticfiles %}
-   
+
     <meta charset="UTF-8">
     <link rel="stylesheet" href={% static "css/style.css" %} type="text/css">
-    
+
     <title>
     {% block title %}
     SurfHouse
@@ -16,7 +16,7 @@
     <div class="header">
        <div class="header_items">
         <div class="header_items_left">
-         <img id="logo" src={% static "img/logo.png" %}>  
+         <img id="logo" src={% static "img/logo.png" %}>
          <div class="welcome">
              <h1 class="welcome_text">Welcome to surfhouse</h1>
              <h4 class="welcome_description">The only online store you willever need for allyour windsurfing and kitesurfing and SUP needs</h4>
@@ -31,19 +31,20 @@
                 <img class="icons" src={% static "img/insta_icon5.png" %}>
             </div>
             <div class="auth_form">
-                {% if not user.is_authenticated %}      
+                {% if not user.is_authenticated %}
                     <form method="post" action="/user/login/">{% csrf_token %}
                         <input type="text" placeholder="login" name="login" value="">
                         <input type="password" placeholder="password" name="password" value="">
                         <button type="submit">OK</button>
+                        <a href="user/registration/">registration</a>
                     </form>
                     {% if errors %}
                         <p class="error">Login or password is incorrect</p>
-                    {% endif %}           
+                    {% endif %}
                 {% else %}
                     {{ user.username }}
                     <a href="/user/logout/">logout</a>
-                
+
                 {% endif %}
             </div>
             <div class="welcome_large_text">
@@ -81,7 +82,7 @@
             </div>
            <div class="items">
                {% block content %}
-               
+
                {% endblock %}
            </div>
         </div>
@@ -104,7 +105,7 @@
     <div class="footer">
     <span>&copy; 2017 All rights reserved - Designed by Hich</span>
     </div>
-    
-    
+
+
 </body>
 </html>
