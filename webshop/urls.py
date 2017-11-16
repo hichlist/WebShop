@@ -17,9 +17,12 @@ from django.conf.urls import url
 from django.contrib import admin
 import mainapp.views as mainapp
 import authapp.views as authapp
+import adminapp.views as adminapp
 
 urlpatterns = [
     url(r'^admin/$', admin.site.urls),
+    url(r'^admin_page/$', adminapp.admin_page),
+    url(r'^admin_page/delete/user/(\d+)$', adminapp.delete_user),
     url(r'^$', mainapp.main, name='main'),
     url(r'^user/login/$', authapp.login, name='login'),
     url(r'^user/logout/$', authapp.logout, name='logout'),

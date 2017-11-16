@@ -28,6 +28,6 @@ def registration(request):
             form.save()
             return HttpResponseRedirect('/')
         context = {'form': form}
-        return render(request, 'registration.html', context)
+        return render(request, 'authapp/registration.html', context)
     context = {'form': MyRegistrationForm()}
     return render(request, 'authapp/registration.html', context)
