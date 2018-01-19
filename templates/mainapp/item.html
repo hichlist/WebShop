@@ -1,0 +1,18 @@
+{% extends "mainapp/base.html" %}
+    {% load staticfiles %}
+       {% block title %}
+       {% endblock %}
+        {% block content %}
+
+               <div class="new_products"><h3 class="product_title">Item</h3>
+                 <div class="product_details">
+                     <div class="product_pic_details">
+                         <img src={% static "img/products/board7_1.jpg" alt="board" %}>
+                     </div>
+                     <div class="product_name">{{ product.name }}</div>
+                    <div class="product_price">$ {{ product.price}}</div>
+                    <div class="product_price_old">$ {{ product.sale_price }}</div>
+                 </div>
+               </div>
+
+        {% endblock %}
