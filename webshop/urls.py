@@ -20,7 +20,7 @@ import authapp.views as authapp
 import adminapp.views as adminapp
 
 urlpatterns = [
-    url(r'^admin/$', admin.site.urls),
+    url(r'^admin/', admin.site.urls),
     url(r'^admin_page/$', adminapp.admin_page),
     url(r'^admin_page/delete/user/(\d+)$', adminapp.delete_user),
     url(r'^$', mainapp.main, name='main'),
