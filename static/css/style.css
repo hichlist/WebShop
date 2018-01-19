@@ -9,6 +9,10 @@ body{
     background-color: #F8F8FF;
     height: 100%;
 }
+a{
+  text-decoration: none;
+  color: inherit;
+}
 
 .container{
     overflow: auto;
@@ -260,6 +264,19 @@ body{
     position: absolute;
     top: 255px;
     right: 123px;
+    overflow: hidden;
+}
+.product_description{
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 800;
+    width: 330px;
+    height: 200px;
+    float: left;
+    color: #333;
+    position: absolute;
+    top: 30px;
+    right: 50px;
     overflow: hidden;
 }
 .product_price{

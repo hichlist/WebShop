@@ -10,8 +10,8 @@
                    <div class="product">
                        <div class="product_pic">
                           <a href="/item/{{ item.id }}">
-                           <img src={% static "img/products/board7.jpg" alt="board" %}>
-                         </a>
+                            <img src={% static "img/products/board7.jpg" alt="board" %}>
+                          </a>
                        </div>
                        <div class="product_name">{{ item.name }}</div>
                       <div class="product_price">$ {{ item.price}}</div>
@@ -25,7 +25,9 @@
                 {% for item in product_top %}
                    <div class="product">
                        <div class="product_pic">
+                         <a href="/item/{{ item.id }}">
                            <img src={% static "img/products/board1.jpg" alt="board" %}>
+                         </a>
                        </div>
                        <div class="product_name">{{ item.name }}</div>
                       <div class="product_price">$ {{ item.price}}</div>
@@ -37,7 +39,9 @@
                 {% for item in product_sale %}
                    <div class="product">
                        <div class="product_pic">
+                         <a href="/item/{{ item.id }}">
                            <img src={% static "img/products/board12.jpg" alt="board" %}>
+                         </a>
                        </div>
                        <div class="product_name">{{ item.name }}</div>
                       <div class="product_price">$ {{ item.price}}</div>
