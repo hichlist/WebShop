@@ -25,6 +25,7 @@ urlpatterns = [
     url(r'^admin_page/delete/user/(\d+)$', adminapp.delete_user),
     url(r'^$', mainapp.main, name='main'),
     url(r'^item/(?P<id>\d+)$', mainapp.item, name='item'),
+    url(r'^contact/$', mainapp.get_contact, name='contact'),
     url(r'^user/login/$', authapp.login, name='login'),
     url(r'^user/logout/$', authapp.logout, name='logout'),
     url(r'^user/registration/$', authapp.registration, name='registration'),

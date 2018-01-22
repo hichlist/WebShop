@@ -1,0 +1,17 @@
+{% extends "mainapp/base.html" %}
+    {% load staticfiles %}
+       {% block title %}
+       {% endblock %}
+        {% block content %}
+
+        <div class="new_products"><h3 class="product_title">Contact</h3>
+          <form action="" method="post">
+             {% csrf_token %}
+             {{ form.sender }}<br>
+             {{ form.subject }}<br>
+             {{ form.message }}<br>
+             <input type="submit" value="Submit" />
+          </form>
+        </div>
+
+        {% endblock %}

@@ -16,7 +16,7 @@
     <div class="header">
        <div class="header_items">
         <div class="header_items_left">
-          <a href="/">
+          <a href="{% url 'main' %}">
             <img id="logo" src={% static "img/logo.png" %}>
           </a>
         <div class="welcome">
@@ -34,11 +34,11 @@
             </div>
             <div class="auth_form">
                 {% if not user.is_authenticated %}
-                    <form method="post" action="/user/login/">{% csrf_token %}
+                    <form method="post" action="{% url 'login' %}">{% csrf_token %}
                         <input type="text" placeholder="login" name="login" value="">
                         <input type="password" placeholder="password" name="password" value="">
                         <button type="submit">OK</button>
-                        <a href="user/registration/">registration</a>
+                        <a href="{% url 'registration' %}">registration</a>
                     </form>
                     {% if errors %}
                         <p class="error">Login or password is incorrect</p>
@@ -65,7 +65,7 @@
         <div class="content">
            <div class="left_column">
                 <ul class="menu">
-                    <a href="/"><li>Main</li></a>
+                    <a href="{% url 'main' %}"><li>Main</li></a>
                     <li>About</li>
                     <li>Apparel</li>
                     <li>Surf Apparel</li>
@@ -76,7 +76,7 @@
                     <li>Brands</li>
                     <li>Blog</li>
                     <li>Gadgets</li>
-                    <li>Contact</li>
+                    <a href="{% url 'contact' %}"><li>Contact</li></a>
                 </ul>
                 <div class="banner">
                     <h1 class="now">Now is open!</h1>
