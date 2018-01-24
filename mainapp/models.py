@@ -1,5 +1,7 @@
 from django.db import models
+import os
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Create your models here.
 class Person(models.Model):
@@ -13,6 +15,7 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2)
     sale_price = models.DecimalField(max_digits=10, decimal_places=2)
     description = models.TextField(blank=True)
+    image = models.ImageField(null=True, blank=True, upload_to='products/')
 #    quantity = models.IntegerField()
 #   Выводит имя товара в админке
 
